@@ -1,0 +1,200 @@
+.NaveBar{
+    height:10vh;
+    background-color: #fff;
+    border: 2px solid #dcd7d7;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    position: fixed;
+    margin-bottom: 90vh;
+    
+  }
+  .search{
+    height:15vh;
+    width:25%;
+  
+  }
+  .nameDiv{
+    height:100%;
+    width: 10%;
+    font-size: 1.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: darkslategray;
+  }
+  .NaveItems{
+    width:80%;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: darkslategray;
+  
+  }
+  .NaveItems input{
+    width:25%;
+    height:50%;
+    border-radius: 2rem;
+    border: 2px solid #dcd7d7;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 1.2rem;
+  }
+  .count{
+    color: rgb(20, 214, 20);
+    font-size: 0.7rem;
+  }
+  .NaveItems div{
+    cursor: pointer;    
+  }
+  .navs{
+    text-decoration: none;
+    cursor: pointer;    
+    color: darkslategray;
+
+  }
+  .details{
+    font-weight: blod;
+  }
+  
+
+  .formcontainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the input field */
+  .forminput {
+    width: 200px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 2px solid #dcd7d7;
+    border-radius: 20px; /* Increase border-radius for rounded corners */
+    padding: 5px 10px; /* Add padding for better appearance */
+    outline: none;
+    font-size: 1.2rem;
+    margin-right: 10px; /* Add margin to separate the input and button */
+  }
+  
+  /* Style for the search button */
+  .formbutton {
+    background-color: #014421;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Increase border-radius for rounded corners */
+    padding: 5px 15px; /* Add padding for better appearance */
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Adjust the existing styles for the input field in .NaveItems input */
+  .NaveItems input {
+    width: auto; /* Remove the fixed width */
+  }
+  /* Style for the search button */
+.formbutton {
+  background-color: #014421;
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Increase border-radius for rounded corners */
+  padding: 10px 20px; /* Add padding for better appearance */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Style for the search button on hover */
+.form-button:hover {
+  background-color: #009935; /* Change the background color on hover */
+
+
+}
+
+
+
+
+/* ===========================================================Reasponsive************************************************** */
+
+
+
+/* Default styles for larger screens */
+.NaveBar {
+  height: 10vh;
+  background-color: #fff;
+  border: 2px solid #dcd7d7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  position: fixed;
+  margin-bottom: 90vh;
+}
+
+.NaveItems {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: darkslategray;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile) */
+@media (max-width: 600px) {
+  .NaveBar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .NaveItems {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nameDiv {
+    font-size: 1.2rem;
+  }
+
+  .formcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the input and button horizontally */
+  }
+
+  /* Adjust the input width and padding for better visibility */
+  .forminput {
+    width: 70%; /* Increase the width to make it more visible */
+    padding: 10px 15px; /* Adjust padding for better touch interaction */
+  }
+
+  .count {
+    font-size: 0.9rem;
+  }
+
+  /* You can also hide or show elements as needed for mobile */
+  /* Example: Hide the .search input for mobile */
+  .NaveItems input {
+    display: block; /* Display the input for mobile */
+    width: 100%; /* Make the input full-width */
+  }
+}
+
+
